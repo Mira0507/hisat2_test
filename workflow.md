@@ -19,22 +19,14 @@ dependencies:
 Above conda environment (**environment.yml**) was written and created by following commend. 
 
 ```termina
-
-
 conda env create -f environment.yml
-
-
 ```
 
 
 The hisat2 conda env was activated by following commend. 
 
 ```terminal
-
-
 conda activate hisat2
-
-
 ```
 
 
@@ -51,36 +43,33 @@ conda activate hisat2
 
 
 **Options**:
-    -c                      reference sequences given on cmd line (as
-                            <reference_in>)
-    --large-index           force generated index to be 'large', even if ref
-                            has fewer than 4 billion nucleotides
-    -a/--noauto             disable automatic -p/--bmax/--dcv memory-fitting
-    -p <int>                number of threads
-    --bmax <int>            max bucket sz for blockwise suffix-array builder
-    --bmaxdivn <int>        max bucket sz as divisor of ref len (default: 4)
-    --dcv <int>             diff-cover period for blockwise (default: 1024)
-    --nodc                  disable diff-cover (algorithm becomes quadratic)
-    -r/--noref              don't build .3/.4.ht2 (packed reference) portion
-    -3/--justref            just build .3/.4.ht2 (packed reference) portion
-    -o/--offrate <int>      SA is sampled every 2^offRate BWT chars (default: 5)
-    -t/--ftabchars <int>    # of chars consumed in initial lookup (default: 10)
-    --localoffrate <int>    SA (local) is sampled every 2^offRate BWT chars (default: 3)
-    --localftabchars <int>  # of chars consumed in initial lookup in a local index (default
-: 6)
-    --snp <path>            SNP file name
-    --haplotype <path>      haplotype file name
-    --ss <path>             Splice site file name
-    --exon <path>           Exon file name
-    --repeat-ref <path>     Repeat reference file name
-    --repeat-info <path>    Repeat information file name
-    --repeat-snp <path>     Repeat snp file name
-    --repeat-haplotype <path>   Repeat haplotype file name
-    --seed <int>            seed for random number generator
-    -q/--quiet              disable verbose output (for debugging)
-    -h/--help               print detailed description of tool and its options
-    --usage                 print this usage message
-    --version               print version information and quit
+- **-c**: reference sequences given on cmd line (as <reference_in>)    
+- **--large-index**: force generated index to be 'large', even if ref has fewer than 4 billion nucleotides
+- **-a/--noauto**: disable automatic -p/--bmax/--dcv memory-fitting
+- **-p <int>**: number of threads
+- **--bmax <int>**: max bucket sz for blockwise suffix-array builder
+- **--bmaxdivn <int>**: max bucket sz as divisor of ref len (default: 4)
+- **--dcv <int>**: diff-cover period for blockwise (default: 1024)
+- **--nodc**: disable diff-cover (algorithm becomes quadratic)
+- **-r/--noref**: don't build .3/.4.ht2 (packed reference) portion
+- **-3/--justref**: just build .3/.4.ht2 (packed reference) portion
+- **-o/--offrate <int>**: SA is sampled every 2^offRate BWT chars (default: 5)
+- **-t/--ftabchars <int>**: # of chars consumed in initial lookup (default: 10)
+- **--localoffrate <int>**: SA (local) is sampled every 2^offRate BWT chars (default: 3)
+- **--localftabchars <int>**: # of chars consumed in initial lookup in a local index (default: 6)
+- **--snp <path>**: SNP file name
+- **--haplotype <path>**: haplotype file name
+- **--ss <path>**: Splice site file name
+- **--exon <path>**: Exon file name
+- **--repeat-ref <path>**: Repeat reference file name
+- **--repeat-info <path>**: Repeat information file name
+- **--repeat-snp <path>**: Repeat snp file name
+- **--repeat-haplotype <path>**: Repeat haplotype file name
+- **--seed <int>**: seed for random number generator
+- **-q/--quiet**: disable verbose output (for debugging)
+- **-h/--help**: print detailed description of tool and its options
+- **--usage**: print this usage message
+- **--version**: print version information and quit
 
 
 Write below bash file (**HISAT2index.sh**).  
