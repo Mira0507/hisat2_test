@@ -2,7 +2,7 @@
 
 - **Conda**: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 - **HISAT2**: http://daehwankimlab.github.io/hisat2/manual
-- The HISAT2 version 2.2.1 was used 
+- HISAT2 version 2.2.1 was used 
 
 
 ```environment.yml
@@ -30,10 +30,14 @@ conda activate hisat2
 ```
 
 
+## 2. Raw data
+- Link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157852
+- Same raw data as the previous Salmon and STAR workflow 
 
-## 2. HISAT2 
 
-### 2-1. Indexing 
+## 3. HISAT2 
+
+### 3-1. Indexing 
 
 - Check out **"The hisat2-build indexer"** description in the [**hisat2 user manual**](http://daehwankimlab.github.io/hisat2/manual)
 - Reference genome: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/ ---> hg19.fa.gz ---> unzip
