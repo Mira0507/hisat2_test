@@ -2,9 +2,9 @@
 
 
 
-cd index_files
+cd reference_genome 
 
-ref_genome="hg19.fa" 
+ref_genome=*.fa 
 
 
 hisat2-build -f -o 4 -t 10 --localoffrate 3 --localftabchars 6 -p 8 --seed 67 $ref_genome "index" 
