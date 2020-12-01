@@ -13,7 +13,7 @@ channels:
   - bioconda 
   - defaults 
 dependencies:
-  - hisat2
+  - hisat2=2.2.1
   - samtools
 ```
 
@@ -46,13 +46,21 @@ conda activate hisat2
 ```bash
 #!/bin/bash
 
-mkdir reference_genome
+# Download reference genome
+mkdir reference_genome | cd reference_genome
 
-cd reference_genome
+wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_35/GRCh38.primary_assembly.genome.fa.gz
 
-wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_35/GRCh38.primary_assembly.genome.fa.gz 
+
 cd ..
 
+
+# Download reference annotation (GTF)
+mkdir reference_gtf | cd reference_gtf 
+
+wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_35/gencode.v35.primary_assembly.annotation.gtf.gz
+
+cd .. 
 ```
 
 
@@ -191,6 +199,8 @@ done
 
 
 cd ..
+
+# Delete SAM files after samtools run
 ```
 
 
