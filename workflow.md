@@ -204,9 +204,8 @@ cd ..
 ```
 
 
-## 5. Deleting SAM files
+## 5. Counting aligned reads with featureCounts 
 
-```bash
+The [**featureCounts**](http://subread.sourceforge.net) was run with [**Rsubread**](https://pubmed.ncbi.nlm.nih.gov/30783653) package in R 
 
-```
-
+R (ver. 4.0.3) script: https://github.com/Mira0507/hisat2_test/blob/master/hisat2_featurecounts.Rmd
